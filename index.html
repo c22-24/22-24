@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <title>what is love</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style> 
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0; 
+            background-image: url('DANCE.jpg');
+            background-size: cover; 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            padding: 20px; 
+        }
+        
+        p1 {
+            text-align: center; 
+        }
+        .box {
+            width: auto;
+            height: auto;
+            background-color: rgba(224, 224, 224, 0.5);
+            border: 1px solid #333;
+            padding: 20px;
+            margin: 10px;
+        }
+        .carousel-container {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .carousel {
+            width: 100%;
+            text-align: center; /* Вирівнюємо контент по центру */
+        }
+        .slick-slide {
+            text-align: center; /* Вирівнюємо контент по центру */
+        }
+        .carousel img {
+            width: 50%%;
+            height: 20%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1> Моє життя </h1>
+            <p> З ранього дитинства я почав займатися танцями. Починав свій шлях я у 6 років та не міг здогадатися, що буду займатися цим видом спорту більшу частину свого життя.</p>
+        </div>
+    </header>
+
+    <div class="box">
+        <p> Починаючи своє перше заняття було дуже цікаво, що чекатиме мене на протязі цього довгого шляху. За 8 років в танцях я пройшов через усі складнощі, та 2 рази літав на чемпіонат світу "BLACKPOOL DANCE FESTIVAL" та останнього разу здобув там 25 місце серед усіх пар з усього світу.</p>
+        <aside>
+            <h2>BLACKPOOL DANCE FESTIVAL</h2>
+            <p1> Детальніше про цей фестиваль ви можете подивитися за цим посиланням: <a href="https://www.blackpooldancefestival.com/uk">BLACKPOOL</a></p1>
+        </aside>
+        <p> пари які представляли україну на цьому чемпіонаті здобули нам 3 місце серед усіх країн  </p>
+    </div>
+    <div class="box">
+        <h2> згадуючи про усі ці роки можу сказати що я дуже пишаюся тим що провів цей час на танцях тут я зустрів багато чудових друзів які подарували мені чудові моменти з мого життя, за що я їм дуже вдячний  </h2>
+    </div>
+    
+    <section>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">photo</a></li>
+                <li><a href="#">video</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+    <div class="carousel-container">
+        <div class="carousel">
+            <div><img src="DANCE.jpg" alt="Фото 1"></div>
+            <div><img src="DANCE2.jpg" alt="Фото 2"></div>
+            <div><img src="DANCE3.jpg" alt="Фото 3"></div>
+            <!-- Додайте більше фотографій, які ви хочете відображати в каруселі -->
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад навчальної групи с22</title>
+	<link rel="icon" href="https://kpi.ua/images/iszzi.png" type="image/x-icon">
+    <style>
+        table {
+            width: 900px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+	    color: white;
+            padding: 10px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('123.jpg');
+        }
+        title {
+            text-align: center;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        /* Горизонтальне меню */
+        #menu {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-end; /* Розташування вправо */
+        }
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #menu li {
+            margin-left: 20px; /* Зміни відступу для вирівнювання */
+        }
+        #menu a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Стилі для контенту */
+        #content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .highlightable {
+            transition: background-color 0.3s; /* Додайте плавний перехід для підсвічування */
+        }
+        .highlightable:hover {
+            background-color: lightblue; /* Змінюємо колір при наведенні */
+            cursor: pointer; /* Змінюємо значок курсора на вказівник, щоб показати, що це клікабельний елемент */
+        }
+
+        /* Форма реєстрації з класом registration-menu */
+        .registration-menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.7); /* Напівпрозорий фон */
+            color: #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .registration-menu h2 {
+            color: #333;
+        }
+        .registration-menu label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .registration-menu input[type="text"],
+        .registration-menu input[type="email"],
+        .registration-menu input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .registration-menu input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <!-- Горизонтальне меню -->
+        <ul>
+            <li><a href="#" onclick="toggleRegistrationForm()">Зареєструватися</a></li>
+        </ul>
+    </div>
+
+    <div id="content" style="text-align: center;">
+        <h1 style="margin-bottom: 20px;">Розклад навчальної групи 22</h1>
+	<img src="iszzi.png" alt="Фонове зображення">
+        
+        <table>
+            <!-- Таблиця розкладу -->
+            <tr>
+                <td></td>
+                <th class="highlightable">18.09 Понеділок</th>
+                <th class="highlightable">19.09 Вівторок</th>
+                <th class="highlightable">20.09 Середа</th>
+                <th class="highlightable">21.09 Четвер</th>
+                <th class="highlightable">22.09 П'ятниця</th>
+                <th class="highlightable">23.09 Субота</th>
+                <th class="highlightable">24.09 Неділя</th>
+            </tr>
+            <tr>
+                <td>8:30-9:15</td>
+                <td rowspan="2" class="highlightable">Право<br>517 каб.</td>
+                <td rowspan="2" class="highlightable">ФВ<br>парк</td>
+                <td rowspan="2" class="highlightable">ТІМ<br>503 каб.</td>
+                <td rowspan="2" class="highlightable">СР<br>503 каб.</td>
+                <td rowspan="2" class="highlightable">ФВ<br>парк</td>
+                <td rowspan="2" class="highlightable">ЗВП<br>107 каб.</td>
+                <td rowspan="8" class="highlightable">Вихідний день</td>
+            </tr>
+            <tr>
+                <td>9:20-10:05</td>
+            </tr>
+            <tr>
+                <td>10:25-11:10</td>
+                <td rowspan="2" class="highlightable">ЗВП<br>6 каб.</td>
+                <td rowspan="2" class="highlightable">ТІК<br>парк</td>
+                <td rowspan="2" class="highlightable">ТІМ<br>503 каб.</td>
+                <td rowspan="2" class="highlightable">Право<br>101 каб.</td>
+                <td rowspan="2" class="highlightable">ТС<br>410</td>
+                <td rowspan="2" class="highlightable">ЗВП<br>107 каб.</td>
+            </tr>
+            <tr>
+                <td>11:15-12:00</td>
+            </tr>
+            <tr>
+                <td>12:20-13:05</td>
+                <td rowspan="2" class="highlightable">Програмування<br>503 каб.</td>
+                <td rowspan="2" class="highlightable">ТС<br>410 каб.</td>
+                <td rowspan="2" class="highlightable">ІМ<br>413 каб.</td>
+                <td rowspan="2" class="highlightable">ФВ<br>парк</td>
+                <td rowspan="2" class="highlightable">СР<br>517 каб.</td>
+                <td rowspan="2" class="highlightable">СР<br>107 каб.</td>
+            </tr>
+            <tr>
+                <td>13:10-13:55</td>
+            </tr>
+            <tr>
+                <td>16:10-16:55</td>
+                <td rowspan="2" class="highlightable">СР<br>101 каб.</td>
+                <td rowspan="2" class="highlightable">СР<br>101 каб.</td>
+                <td rowspan="2" class="highlightable">СР<br>101 каб.</td>
+                <td rowspan="2" class="highlightable">Програмування<br>101 каб.</td>
+                <td rowspan="2" class="highlightable">СР<br>101 каб.</td>
+                <td rowspan="2" class="highlightable"></td>
+            </tr>
+            <tr>
+                <td>17:00-17:45</td>
+            </tr>
+        </table>
+
+        <!-- Форма реєстрації з класом registration-menu -->
+        <div class="registration-menu">
+            <h2>Реєстрація</h2>
+            <form action="робота_з_формою.php" method="POST" onsubmit="return validateForm()">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Прізвище:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Підтвердження пароля:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <input type="submit" value="Зареєструватися">
+                <p id="registration-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var registrationMenu = document.querySelector(".registration-menu");
+        var registrationMessage = document.getElementById("registration-message");
+
+        function toggleRegistrationForm() {
+            var registrationMenu = document.querySelector(".registration-menu");
+            registrationMenu.style.display = registrationMenu.style.display === "none" ? "block" : "none";
+        }
+
+        var highlightableCells = document.querySelectorAll(".highlightable");
+
+        highlightableCells.forEach(function(cell) {
+            cell.addEventListener("click", function() {
+                console.log(cell.textContent); // Виводимо текст клітинки у консоль
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/*форматування шрифту*/
+.font-formatting {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*форматування тексту*/
+.text-formatting {
+	 color: #0000FF; 
+	 text-align: center;
+	 line-height: 1.5;
+}
+
+/*внутрішні та зовнішні відступи*/
+.spacing {
+	padding:20px;
+	margin:10px;
+	
+}
+
+.border {
+  border: 2px dotted #EE0000;
+  border-radius: 10px; 
+}

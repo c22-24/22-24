@@ -1,0 +1,98 @@
+
+/* Встановлення заднього фону для всього документу */
+body {
+    background-image: url('123.jpeg'); /* Замініть 'шлях_до_зображення.jpg' на шлях до вашого фонового зображення */
+    background-size: cover; /* Автоматично змінювати розмір фону для вписування в весь документ */
+    background-repeat: no-repeat; /* Запобігти повторенню фонового зображення */
+}
+
+
+
+/* Стилі для верхнього меню (header) */
+.header {
+    background-color: rgba(255, 255, 255, 0.7); /* Фоновий колір з прозорістю */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center; /* Вирівнювати текст у центрі горизонтально */
+}
+
+h1 {
+    color: black;
+    margin: 0; /* Видалити зовнішній відступ для заголовка */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    color:black ;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Стилізація таблиці */
+.table {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc; /* Додати рамку до таблиці */
+}
+
+th, td {
+	background-color: rgba(255, 255, 255, 0.7);
+	 transition: transform 0.3s;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc; /* Додати рамку знизу для комірок */
+	
+	
+}
+
+th {
+    background-color: #f2f2f2; /* Світло-сірий фон для заголовкових комірок */
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9; /* Фоновий колір при наведенні курсору */
+}
+
+/* Опціонально: Стилі для заголовків */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Опціонально: Налаштування стилів для тексту в комірках */
+td {
+    font-size: 14px;
+}
+
+/* Опціонально: Додати відступ для секції */
+.section {
+    padding: 20px;
+}
+.form { 
+background-color: rgba(255, 255, 255, 0.7);
+}
+	
